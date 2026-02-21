@@ -1,0 +1,402 @@
+/**
+ * Standalone home page data. No Pinia/store imports — used by index.vue useAsyncData
+ * to avoid circular dependency and "Cannot access 'ut' before initialization".
+ */
+
+const HOME_DATA = {
+  hero: {
+    title: "Design, Manufacture, and Deliver Premium Interiors",
+    subtitle:
+      "Proudly Egyptian craftsmanship, built on high-standard wood manufacturing",
+    description:
+      "We are a full-service interior partner specializing in hospitality, commercial, and residential projects. From concept to completion, all under one roof.",
+    image: "/images/deleted/hero-img.png",
+    listOfFeatures: [
+      "Delivering on Time",
+      "100% Natural Woods",
+      "Complete Interiors Solutions",
+    ],
+  },
+  solutions: {
+    title: "Complete Interior Solutions",
+    subtitle:
+      "Qouanm combines creative design expertise with in-house manufacturing capabilities to deliver exceptional interiors for hotels, compounds, offices, and premium residences.",
+    image: "/images/deleted/about-img.png",
+  },
+  ontime: {
+    title: "Complete Solutions Delivered on Time",
+    subtitle:
+      "Qouanm unifies design, in-house manufacturing, and execution to deliver accurate timelines and reliable results.",
+    listOfFeatures: [
+      {
+        title: "Design with Built-In Timelines",
+        description:
+          "Our design process is aligned with production and execution from day one. By designing with materials, manufacturing methods, and schedules in mind, we eliminate delays before they start.",
+        icon: "/images/deleted/clock.png",
+      },
+      {
+        title: "In-House Manufacturing for Time Control",
+        description:
+          "All custom furniture and woodwork are produced in our own factory, allowing full control over quality, sequencing, and production timelines — without reliance on external suppliers.",
+        icon: "/images/deleted/manufacturing.png",
+      },
+      {
+        title: "Expert Teams. Seamless Execution.",
+        description:
+          "With manufacturing and site teams working under one system, installation and handover are executed efficiently, accurately, and on schedule — from first delivery to final completion.",
+        icon: "/images/deleted/teams.png",
+      },
+    ],
+  },
+  services: {
+    title: "Interior Services That Perform",
+    subtitle:
+      "Services built to support hotels, developments, and complex spaces with confidence and control.",
+    servicesCards: [
+      {
+        title: "Hospitality Interiors & Hotel Furniture",
+        description:
+          "We design, manufacture, and deliver complete interior solutions for hotels and hospitality spaces — from guestrooms and lobbies to reception areas and public zones — ensuring consistent quality, efficient timelines, and seamless execution at scale.",
+        statistics: [
+          { title: "Rooms Finishing ", icon: "+200" },
+          { title: "Furniture Units Manufactured", icon: "+5,000" },
+          { title: "Luxury Loopy Designs", icon: "100%" },
+        ],
+        image: [
+          "/images/deleted/services-one.png",
+          "/images/deleted/services-two.png",
+        ],
+      },
+      {
+        title: "Clusters (Compounds & Residential Developments)",
+        description:
+          "For compounds and large residential projects, we provide integrated interior design and furnishing services tailored to bedrooms, living areas, kitchens, and outdoor spaces — delivered with accuracy, consistency, and controlled timelines..",
+        statistics: [
+          { title: "Residential Spaces Furnished", icon: "+200" },
+          { title: "Furniture Units Manufactured", icon: "+5,000" },
+        ],
+        image: ["/images/deleted/services-one.png"],
+      },
+      {
+        title: "Interior Design & 3D Visualization",
+        description:
+          "Our design team develops well-planned interior concepts supported by realistic 3D visuals, allowing clients to review, approve, and move forward with confidence — while aligning design decisions with execution schedules.",
+        statistics: [
+          { title: "Interior Concepts Designed", icon: "+300" },
+          { title: "Realistic 3D Visualization", icon: "100%" },
+        ],
+        image: ["/images/deleted/services-one.png"],
+      },
+      {
+        title: "Kitchens & Wardrobes",
+        description:
+          "We design and manufacture custom kitchens and wardrobes that combine functionality, durability, and refined finishes, produced in our factory and installed with accuracy and speed.",
+        statistics: [
+          { title: "Concept Designs", icon: "+500" },
+          { title: "RTailored to Your Space", icon: "100%" },
+        ],
+        image: [
+          "/images/deleted/services-one.png",
+          "/images/deleted/services-two.png",
+        ],
+      },
+    ],
+  },
+  partners: {
+    logos: [
+      "/images/deleted/image-1.png",
+      "/images/deleted/image-6.png",
+      "/images/deleted/image-7.png",
+      "/images/deleted/image-8.png",
+      "/images/deleted/image-9.png",
+      "/images/deleted/image-10.png",
+      "/images/deleted/image-12.png",
+      "/images/deleted/image-1.png",
+      "/images/deleted/image-6.png",
+      "/images/deleted/image-7.png",
+      "/images/deleted/image-8.png",
+      "/images/deleted/image-9.png",
+      "/images/deleted/image-10.png",
+      "/images/deleted/image-12.png",
+      "/images/deleted/image-1.png",
+      "/images/deleted/image-6.png",
+      "/images/deleted/image-7.png",
+      "/images/deleted/image-8.png",
+      "/images/deleted/image-9.png",
+      "/images/deleted/image-10.png",
+      "/images/deleted/image-12.png",
+    ],
+  },
+  seo: {
+    image: "/images/deleted/meet-ceo.jpg",
+    title: "Meet Our CEO",
+    listParagraphs: [
+      " At Qouanm, we believe that successful interior projects are built on more than design alone. They require clear planning, skilled people, and full control over every stage of production and execution.",
+      " From the beginning, our vision was to create a company that brings design, in-house manufacturing, and execution together under one system.This approach allows us to maintain high standards, reduce delays, and deliver projects with accuracy and confidence — especially for spaces where timing and consistency truly matter.",
+      "Our team takes pride in every detail, from the first design concept to the final installation. We are committed to building long-term partnerships by delivering interiors that reflect quality, reliability, and respect for our clients' timelines.",
+    ],
+    signature: "/images/deleted/signature.png",
+    logo: "/images/deleted/logo-seo.png",
+  },
+  featured: {
+    title: "Featured Projects",
+    subtitle:
+      "Explore our portfolio of successfully delivered hospitality, commercial, and residential projects.",
+    projects: [
+      {
+        id: 1,
+        image: "/images/deleted/project-1.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 2,
+        image: "/images/deleted/project-2.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 3,
+        image: "/images/deleted/project-3.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 4,
+        image: "/images/deleted/project-4.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 5,
+        image: "/images/deleted/project-5.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 6,
+        image: "/images/deleted/project-6.png",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+      {
+        id: 7,
+        image: "/images/deleted/project-7.jpg",
+        logo: "/images/deleted/project-logo.png",
+        title: "Hilton Hotel Guest Rooms & Public Areas",
+        description:
+          "A complete interior design, custom furniture manufacturing, and turnkey execution for Hilton Hotel, delivering refined guest rooms and public spaces with consistent quality, precise timelines, and seamless handover.",
+        statistics: [
+          { title: "Rooms Design", icon: "250" },
+          { title: "Furniture Units", icon: "20500" },
+          { title: "weeks", icon: "6" },
+        ],
+      },
+    ],
+  },
+  ourProcess: {
+    title: "Our Process",
+    subtitle:
+      "A structured approach from initial consultation to final handover.",
+    image: "/images/deleted/logo-seo.png",
+    steps: [
+      {
+        number: 1,
+        title: "Consultation & Brief",
+        description:
+          "Understanding your requirements, timeline, and budget.",
+      },
+      {
+        number: 2,
+        title: "Design & Planning",
+        description:
+          "Concept development, space planning, and detailed drawings.",
+      },
+      {
+        number: 3,
+        title: "Manufacturing",
+        description:
+          "Custom furniture production in our quality-controlled factory.",
+      },
+      {
+        number: 4,
+        title: "Installation & Handover",
+        description:
+          "Professional installation and complete project delivery.",
+      },
+    ],
+  },
+  clientsReviews: {
+    title: "Clients Reviews",
+    subtitle: "What our clients say about working with Qouanm.",
+    image: "/images/deleted/clients-reviews.png",
+    reviews: [
+      {
+        id: 1,
+        image: "/images/deleted/comments.jpg",
+        name: "Ahmed Hassan",
+        JobDescription: "Project Director, Hospitality Development",
+        comment:
+          '"Qouanm delivered exactly what was promised — quality finishes, custom furniture, and most importantly, accurate timelines. Their team handled everything smoothly from production to final handover."',
+      },
+      {
+        id: 2,
+        image: "/images/deleted/comments.jpg",
+        name: "A Hassan",
+        JobDescription: "Project Director, Hospitality Development",
+        comment:
+          '"Qouanm delivered exactly what was promised — quality finishes, custom furniture, and most importantly, accurate timelines. Their team handled everything smoothly from production to final handover."',
+      },
+      {
+        id: 3,
+        image: "/images/deleted/comments.jpg",
+        name: "A Hassan",
+        JobDescription: "Project Director, Hospitality Development",
+        comment:
+          '"Qouanm delivered exactly what was promised — quality finishes, custom furniture, and most importantly, accurate timelines. Their team handled everything smoothly from production to final handover."',
+      },
+      {
+        id: 4,
+        image: "/images/deleted/comments.jpg",
+        name: "A Hassan",
+        JobDescription: "Project Director, Hospitality Development",
+        comment:
+          '"Qouanm delivered exactly what was promised — quality finishes, what was promised — quality fi what was promised — quality fi what was promised — quality fi custom furniture, and most importantly, accurate timelines. Their team handled everything smoothly from production to final handover. accurate timelines. Their team handled everything smoothly from production to final handover. accurate timelines. Their team handled everything smoothly from production to final handover."',
+      },
+    ],
+  },
+  mediaCenter: {
+    title: "Media Center",
+    subtitle: "What our clients say about working with Qouanm.",
+    posts: [
+      {
+        id: 1,
+        blog: "hospitality-furniture-impacts ",
+        image: "/images/deleted/project-1.png",
+        title: "How Hospitality Furniture Impacts Guest Experience",
+        time: "5 Mins Read",
+        date: "15 Oct 2025",
+      },
+      {
+        id: 2,
+        blog: "hospitality-furniture-impacts ",
+        image: "/images/deleted/project-2.png",
+        title: "How Hospitality Furniture Impacts Guest Experience",
+        time: "5 Mins Read",
+        date: "15 Oct 2025",
+      },
+      {
+        id: 3,
+        blog: "hospitality-furniture-impacts ",
+        image: "/images/deleted/project-3.png",
+        title: "How Hospitality Furniture Impacts Guest Experience",
+        time: "5 Mins Read",
+        date: "15 Oct 2025",
+      },
+      {
+        id: 4,
+        blog: "hospitality-furniture-impacts ",
+        image: "/images/deleted/project-4.png",
+        title: "How Hospitality Furniture Impacts Guest Experience",
+        time: "5 Mins Read",
+        date: "15 Oct 2025",
+      },
+      {
+        id: 5,
+        blog: "hospitality-furniture-impacts ",
+        image: "/images/deleted/project-5.png",
+        title: "How Hospitality Furniture Impacts Guest Experience",
+        time: "5 Mins Read",
+        date: "15 Oct 2025",
+      },
+    ],
+  },
+} as const
+
+const FAQS_DATA = {
+  label: "Have A Question?",
+  title: "Frequently Asked Question",
+  faqs: [
+    {
+      id: 1,
+      question: "What is The Training Hub?",
+      answer:
+        "The Training Hub is a professional training and development company established in 2019, specializing in practical, results-driven learning solutions for individuals and organizations across Egypt, Kenya, and Saudi Arabia.",
+    },
+    {
+      id: 2,
+      question: "What types of training programs do you offer?",
+      answer:
+        "We offer a wide range of programs including:\r\n\r\nLeadership & Management\r\n\r\nSales & Business Development\r\n\r\nDigital Marketing & AI\r\n\r\nData Analysis (Excel & Power BI)\r\n\r\nEmotional Intelligence & Communication\r\n\r\nChange & Conflict Management\r\n\r\nIT & Professional Certifications\r\n\r\nOur programs are designed for real workplace application.",
+    },
+    {
+      id: 3,
+      question: "Are your training programs accredited?",
+      answer:
+        "Yes.\r\nThe Training Hub is:\r\n\r\nACTD Accredited (Accrediting Council for Training & Development)\r\n\r\nCPD Certified Provider for selected programs\r\n\r\nThis ensures our training meets recognized international quality standards.",
+    },
+    {
+      id: 4,
+      question: "Who can attend your courses?",
+      answer:
+        "Our programs are suitable for:\r\n\r\nProfessionals at all career levels\r\n\r\nManagers and team leaders\r\n\r\nSales, HR, and operations teams\r\n\r\nFresh graduates seeking career acceleration\r\n\r\nOrganizations looking to upskill their workforce",
+    },
+    {
+      id: 5,
+      question: "Do you offer corporate or in-house training?",
+      answer:
+        "Yes. We provide On-Site Corporate Training (In-House) tailored to your organization's needs, objectives, and industry, delivered at your location or our training facilities.",
+    },
+  ],
+} as const
+
+/** Load home + faqs data without touching Pinia (avoids circular dependency / TDZ). */
+export async function loadHomeData(): Promise<{
+  home: typeof HOME_DATA
+  faqs: typeof FAQS_DATA
+}> {
+  await new Promise((r) => setTimeout(r, 0))
+  return { home: HOME_DATA, faqs: FAQS_DATA }
+}
