@@ -46,7 +46,7 @@
 
 <script setup lang="ts">
 import { motion } from "motion-v"
-import IntroAboutSection from '../main-component/IntroAboutSection.vue'
+import IntroAboutSection from '../main-component/InfoAboutHom.vue'
 
 const props = defineProps({
     title: {

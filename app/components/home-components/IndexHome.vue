@@ -1,5 +1,4 @@
 <template>
-    <div>
       <HeroSection
         :title="generalData?.hero?.title"
         :subtitle="generalData?.hero?.subtitle"
@@ -57,7 +56,6 @@
         :label="faqsData?.label"
         :faqs="faqsData?.faqs"
       />
-    </div>
   </template>
   
   <script setup>

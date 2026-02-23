@@ -4,5 +4,6 @@ import type { GeneralState } from "~/types/general.state.ts";
 export const state = (): GeneralState => ({
   home: null,
   faqs: null,
+  about: null,
   isLoadingData: false,
 });

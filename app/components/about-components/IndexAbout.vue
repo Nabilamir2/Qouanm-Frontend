@@ -1,0 +1,41 @@
+<template>
+    <div>
+        <AboutQouanm 
+        :label="generalData?.aboutQouanm?.label"
+        :title="generalData?.aboutQouanm?.title"
+        :subtitle="generalData?.aboutQouanm?.subtitle"
+        :listFeatures="generalData?.aboutQouanm?.listFeatures"
+        />
+    </div>
+  </template>
+  
+  <script setup>
+  import { computed, onMounted } from 'vue'
+  import AboutQouanm from './AboutQouanm.vue'
+  const { useGeneralStore } = await import('@/stores/general')
+  
+  // const store = useGeneralStore()
+  // onMounted(() => {
+  //   store.fetchAboutData()
+  // })
+  
+  // const generalData = computed(() => store.about)
+
+  
+// Use standalone loader only — no Pinia/store in this path (fixes "Cannot access 'ut' before initialization")
+const { data: aboutPayload } = await useAsyncData('about', () =>
+  import('~/data/about').then((m) => m.loadAboutData())
+)
+
+// After mount, sync payload into Pinia (dynamic import so store not in initial page bundle)
+onMounted(async () => {
+  const payload = aboutPayload.value
+  if (!payload?.about) return
+  const store = useGeneralStore()
+  store.about = payload.about
+})
+
+const generalData = computed(() => aboutPayload.value?.about ?? null)
+
+  </script>
+  
