@@ -7,8 +7,7 @@ export const faqsActions = {
     if (this.faqs && this.faqs !== null) return;
     try {
       this.isLoadingData = true;
-      const config = useRuntimeConfig();
-      const api = createApiClient(config.public.apiBase as string);
+      const api = createApiClient();
       const res = await api.get<Record<string, any>>("/faqs");
       this.faqs = res.data ?? null;
     } catch (_e) {

@@ -16,8 +16,7 @@ export const homeActions = {
     if (this.home && this.home !== null) return;
     try {
       this.isLoadingData = true;
-      const config = useRuntimeConfig();
-      const api = createApiClient(config.public.apiBase as string);
+      const api = createApiClient();
       const res = await api.get<Record<string, any>>("/home");
       this.home = res.data ?? null;
     } catch (_e) {
