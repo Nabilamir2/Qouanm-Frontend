@@ -1,8 +1,28 @@
 <template>
-  <section class="h-screen overflow-hidden bg-black pb-25 px-15 flex items-end justify-center">
+  <section
+    class="lg:h-[150vh] h-screen overflow-hidden bg-black pb-18 px-15 flex items-end justify-center"
+  >
     <div class="flex flex-col items-center justify-center">
-        <IntroAboutSection :title="title" :subtitle="subtitle" :label="label" />
-        {{ listFeatures }}
+      <IntroAboutSection :title="title" :subtitle="subtitle" :label="label" />
+      <div class="grid grid-cols-11 auto-rows-[70px] lg:gap-4 gap-1 mt-[60px]">
+        <div
+          v-for="(feature, index) in listFeatures"
+          :key="index"
+          :class="gridClasses[index]"
+          class="rounded-[20px] overflow-hidden"
+        >
+          <NuxtImg
+            :src="feature"
+            class="w-full h-full object-cover"
+            :alt="'about-qouanm--' + index"
+            loading="lazy"
+            width="100%"
+            height="100%"
+            format="webp"
+            quality="80"
+          />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -28,4 +48,14 @@ const props = defineProps({
     required: true,
   },
 });
+
+const gridClasses = [
+  'col-span-2 row-span-4 row-start-3',
+  'col-span-2 row-span-2 row-start-2',
+  'col-span-2 row-span-4 row-start-4',
+  'col-span-3 row-span-8 row-start-1',
+  'col-span-2 row-span-4 row-start-2',
+  'col-span-2 row-span-2 row-start-6',
+  'col-span-2 row-span-4 row-start-3',
+]
 </script>

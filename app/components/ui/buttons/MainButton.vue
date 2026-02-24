@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex items-center gap-[10px] justify-between 
+    class="flex items-center gap-[10px] 
     rounded-[6px] 
     text-white 
     min-h-[40px] 
@@ -33,7 +33,7 @@ export default {
     },
     paddingX: {
       type: String,
-      default: 'px-[16px]',
+      default: 'px-[16px] justify-between ',
     },
     hasIcon: {
       type: Boolean,
