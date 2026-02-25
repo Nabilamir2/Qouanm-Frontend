@@ -1,61 +1,67 @@
 <template>
-    <div>
-        <AboutQouanm 
-        :label="generalData?.aboutQouanm?.label"
-        :title="generalData?.aboutQouanm?.title"
-        :subtitle="generalData?.aboutQouanm?.subtitle"
-        :listFeatures="generalData?.aboutQouanm?.listFeatures"
-        />
-      <div class="relative">
-        <div class="sticky top-0 -z-10">
-        <OurStory 
-        :image="generalData?.ourStory?.image"
-        :label="generalData?.ourStory?.label"
-        :title="generalData?.ourStory?.title"
-        :listParagraphs="generalData?.ourStory?.listParagraphs"
+  <div>
+    <AboutQouanm
+      :label="generalData?.aboutQouanm?.label"
+      :title="generalData?.aboutQouanm?.title"
+      :subtitle="generalData?.aboutQouanm?.subtitle"
+      :listFeatures="generalData?.aboutQouanm?.listFeatures"
+    />
+    <div class="relative">
+      <div class="sticky top-0 -z-10">
+        <OurStory
+          :image="generalData?.ourStory?.image"
+          :label="generalData?.ourStory?.label"
+          :title="generalData?.ourStory?.title"
+          :listParagraphs="generalData?.ourStory?.listParagraphs"
         />
       </div>
-        <Numbers 
-         :number="generalData?.designedToDeliver?.number"
-        />
-        <DesignedToDeliver 
-        :designedto="generalData?.designedToDeliver?.designedto"
-        :designdLed="generalData?.designedToDeliver?.designdLed"
-        :expertTeams="generalData?.designedToDeliver?.expertTeams"
-        :reliableTimelines="generalData?.designedToDeliver?.reliableTimelines"
-        />
+      <NumbersAbout :number="generalData?.designedToDeliver?.number" />
+      <DesignedToDeliverAbout
+        :designedToDeliver="generalData?.designedToDeliver"
+      />
     </div>
-      <OurMission 
+    <OurMission
       :label="generalData?.ourMission?.label"
       :description="generalData?.ourMission?.description"
       :image="generalData?.ourMission?.image"
-      />
-      <OurVision 
-      :label="generalData?.ourVision?.label"
-      :description="generalData?.ourVision?.description"
-      :image="generalData?.ourVision?.image"
+    />
+    <div class="relative">
+      <div class="sticky top-0 -z-10">
+        <OurVision
+          :label="generalData?.ourVision?.label"
+          :description="generalData?.ourVision?.description"
+          :image="generalData?.ourVision?.image"
+        />
+      </div>
+      <OurTeam
+        :title="generalData?.ourTeam?.title"
+        :subTitle="generalData?.ourTeam?.subTitle"
+        :teams="generalData?.ourTeam?.teams"
       />
     </div>
-  </template>
-  
-  <script setup>
+  </div>
+</template>
+
+<script setup>
   import { computed, onMounted } from 'vue'
   import AboutQouanm from './AboutQouanm.vue'
   import OurStory from './OurStory.vue'
-  import Numbers from './Numbers.vue'
-  import DesignedToDeliver from './DesignedToDeliver.vue'
+  import NumbersAbout from './NumbersAbout.vue'
+  import DesignedToDeliverAbout from './DesignedToDeliverAbout.vue'
   import OurMission from './OurMission.vue'
   import OurVision from './OurVision.vue'
+  import OurTeam from './OurTeam.vue'
+
   const { useGeneralStore } = await import('@/stores/general')
-  
+
   // const store = useGeneralStore()
   // onMounted(() => {
   //   store.fetchAboutData()
   // })
-  
+
   // const generalData = computed(() => store.about)
 
-  
+
 // Use standalone loader only — no Pinia/store in this path (fixes "Cannot access 'ut' before initialization")
 const { data: aboutPayload } = await useAsyncData('about', () =>
   import('~/data/about').then((m) => m.loadAboutData())
@@ -70,6 +76,4 @@ onMounted(async () => {
 })
 
 const generalData = computed(() => aboutPayload.value?.about ?? null)
-
-  </script>
-  
+</script>

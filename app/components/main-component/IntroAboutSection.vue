@@ -1,9 +1,11 @@
 <template>
-    <div class="flex flex-col items-center justify-center">
-        <p class="text-primary-gold text-regular font-small">{{ label }}</p>
-        <h1 class="text-white lg:text-[4.375rem] text-[3rem] pb-6">{{ title }}</h1>
-        <p class="text-primary-text text-[1.1em] font-normal max-w-200 text-center">{{ subtitle }}</p>
-    </div>
+  <div class="flex flex-col items-center justify-center">
+    <p class="text-primary-gold text-regular font-small">{{ label }}</p>
+    <h1 class="text-white lg:text-[4.375rem] text-[3rem] pb-6">{{ title }}</h1>
+    <p class="text-primary-text text-[1.1em] font-normal max-w-200 text-center">
+      {{ subtitle }}
+    </p>
+  </div>
 </template>
 
 <script lang="ts">

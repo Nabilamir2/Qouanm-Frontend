@@ -3,8 +3,6 @@
  * to avoid circular dependency and "Cannot access 'ut' before initialization".
  */
 
-import { number } from "motion-v";
-
 const ABOUT_DATA = {
   aboutQouanm: {
     label: "About Qouanm",
@@ -84,6 +82,42 @@ const ABOUT_DATA = {
     description:
       "Our aim is to export our work all over the world, as well as, expanding our partnerships with the top brands in Egypt and the Middle East, through providing top-grade and fine natural woods.",
     image: "/images/deleted/our-vision.png",
+  },
+  ourTeam: {
+    title: "Our Team",
+    subTitle: "Meet the Experts Behind Every Delivery",
+    teams: [
+      {
+        title: "Founder & CEOe",
+        name: "John Doe",
+        image: "/images/deleted/team-1.jpg",
+      },
+      {
+        title: "Head of Interior Design",
+        name: "Abdulrahman Mohamed",
+        image: "/images/deleted/team-2.jpg",
+      },
+      {
+        title: "Furniture Design Lead",
+        name: "Mona Hakim",
+        image: "/images/deleted/team-3.jpg",
+      },
+      {
+        title: "Factory Production Manager",
+        name: "Mohamed Mostafa",
+        image: "/images/deleted/team-4.jpg",
+      },
+      {
+        title: "Quality Control Supervisor",
+        name: "Hala Abdelhamid",
+        image: "/images/deleted/team-5.jpg",
+      },
+      {
+        title: "Procurement & Materials Specialist",
+        name: "Kareem Mohamed",
+        image: "/images/deleted/team-6.png",
+      },
+    ],
   },
 } as const;
 
