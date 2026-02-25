@@ -245,8 +245,7 @@ const HOME_DATA = {
       {
         number: 1,
         title: "Consultation & Brief",
-        description:
-          "Understanding your requirements, timeline, and budget.",
+        description: "Understanding your requirements, timeline, and budget.",
       },
       {
         number: 2,
@@ -263,8 +262,7 @@ const HOME_DATA = {
       {
         number: 4,
         title: "Installation & Handover",
-        description:
-          "Professional installation and complete project delivery.",
+        description: "Professional installation and complete project delivery.",
       },
     ],
   },
@@ -353,7 +351,7 @@ const HOME_DATA = {
       },
     ],
   },
-} as const
+} as const;
 
 const FAQS_DATA = {
   label: "Have A Question?",
@@ -390,13 +388,13 @@ const FAQS_DATA = {
         "Yes. We provide On-Site Corporate Training (In-House) tailored to your organization's needs, objectives, and industry, delivered at your location or our training facilities.",
     },
   ],
-} as const
+} as const;
 
 /** Load home + faqs data without touching Pinia (avoids circular dependency / TDZ). */
 export async function loadHomeData(): Promise<{
-  home: typeof HOME_DATA
-  faqs: typeof FAQS_DATA
+  home: typeof HOME_DATA;
+  faqs: typeof FAQS_DATA;
 }> {
-  await new Promise((r) => setTimeout(r, 0))
-  return { home: HOME_DATA, faqs: FAQS_DATA }
+  await new Promise((r) => setTimeout(r, 0));
+  return { home: HOME_DATA, faqs: FAQS_DATA };
 }

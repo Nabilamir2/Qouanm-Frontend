@@ -1,6 +1,5 @@
 <template>
-  <section class="bg-primary-1 px-[60px] pb-[100px]">
-    <div class="container grid grid-cols-10 gap-4 pt-[100px]">
+     <div class="container grid grid-cols-10 gap-4 pt-[100px]">
       <div class="col-span-4">
         <div class="sticky top-[100px]">
           <h2 class="text-white">{{ title }}</h2>
@@ -50,8 +49,14 @@
                 >
                   {{ item.title }}
                 </p>
-                <p class="font-normal text-[16px] text-[#E5E5E5] text-wrap">
-                  {{ item.description }}
+                <ul class="font-normal text-[16px] text-[#E5E5E5] text-wrap" v-if="getDescription(item.description)">
+                    <li v-for="(description, index) in item.description" :key="index" class="pb-2.5">
+                        <Icon name="mdi:check-circle-outline" class="text-primary-gold mr-2" size="20" />
+                        {{ description }}
+                    </li>
+                </ul>
+                <p class="font-normal text-[16px] text-[#E5E5E5] text-wrap" v-else>
+                   {{ item.description }}
                 </p>
               </div>
             </li>
@@ -60,25 +65,52 @@
 
         <div class="mt-8 lg:ml-[240px] ml-[80px]">
           <MainButton
-            :ButtonText="`Let's Talk`"
+            :ButtonText="buttonText"
             paddingX="px-[52px] py-[17.5px]"
           />
         </div>
       </div>
     </div>
-  </section>
 </template>
-<script setup lang="ts">
+<script lang="ts">
 import MainButton from '../ui/buttons/MainButton.vue';
+import type { PropType } from 'vue';
+import type { ProcessSteps } from '@/types/ProcessSteps';
 
-defineProps<{
-    title: string;
-    subtitle: string;
-    image: string;
-    steps: {
-        number: number;
-        title: string;
-        description: string;
-    }[];
-}>();
+export default {
+    components: {
+        MainButton
+    },
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        subtitle: {
+            type: String,
+            required: true
+        },
+        image: {
+            type: String,
+            required: true
+        },
+        steps: {
+            type: Array as PropType<ProcessSteps[]>,
+            required: true
+        },
+        buttonText: {
+            type: String,
+            required: true
+        }
+    },
+    methods: {
+        getDescription(description: string | Array<string>) {
+            let ifDescriptionIsArray = false;
+            if (Array.isArray(description)) {
+                ifDescriptionIsArray = true;
+            }
+            return ifDescriptionIsArray;
+        }
+    }
+}
 </script>

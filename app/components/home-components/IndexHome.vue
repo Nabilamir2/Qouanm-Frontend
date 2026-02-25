@@ -34,7 +34,7 @@
         :subtitle="generalData?.featured?.subtitle"
         :projects="generalData?.featured?.projects"
       />
-      <OurProcess
+      <OurProcessHome
         :title="generalData?.ourProcess?.title"
         :subtitle="generalData?.ourProcess?.subtitle"
         :image="generalData?.ourProcess?.image"
@@ -67,7 +67,7 @@
   import SupportClients from './SupportClients.vue'
   import MeetCEO from './MeetCEO.vue'
   import Fatured from './Fatured.vue'
-  import OurProcess from './OurProcess.vue'
+  import OurProcessHome from './OurProcessHome.vue'
   import ClientsReviews from './ClientsReviews.vue'
   import MediaCenter from './MediaCenter.vue'
   import FaqsSection from './FaqsSection.vue'

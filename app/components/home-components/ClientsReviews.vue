@@ -52,7 +52,7 @@
         class="center-card transition-all duration-700 ease-in-out"
         :class="isHovered ? 'center-grid' : 'center-stack'"
       >
-        <NuxtImg :src="image" alt="clients" width="400" height="400" format="webp" quality="80" class="w-full h-full object-cover" />
+        <NuxtImg :src="image" alt="clients" width="400" height="600" format="webp" quality="80" class="w-full h-full object-cover" />
       </div>
 
       <!-- RIGHT CARDS -->
