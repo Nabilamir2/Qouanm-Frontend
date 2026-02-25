@@ -30,17 +30,18 @@
   --color-primary-gold: #d7ad61 /* Primary/Gold */;
   --color-primary-gold-dark: #6b4a0f
     /* Darker gold for contrast on light backgrounds (WCAG AA) */;
-  --color-primary-gold-05: #fdfbf7 /* Primary/Gold */;
-  --color-primary-gold-10: #fbf7ef /* Primary/Gold */;
-  --color-primary-gold-20: #f7efdf /* Primary/Gold */;
-  --color-primary-gold-30: #f3e6d0 /* Primary/Gold */;
-  --color-primary-gold-40: #efdec0 /* Primary/Gold */;
+  --color-primary-gold-05: #fdfbf7 /* Primary/Gold 5*/;
+  --color-primary-gold-10: #fbf7ef /* Primary/Gold 10*/;
+  --color-primary-gold-20: #f7efdf /* Primary/Gold 20*/;
+  --color-primary-gold-30: #f3e6d0 /* Primary/Gold 30*/;
+  --color-primary-gold-40: #efdec0 /* Primary/Gold 40*/;
   --color-secondary-1: #40404080 /* Primary/2 */;
   --color-primary-text: #e5e5e5 /* Primary/Text/Gray */;
   --color-secondary-text: #4e4d52 /* Primary/Text/Secondary */;
-  --color-grey-text-10: #e8e8e8 /* Primary/Text/Gray */;
-  --color-grey-text-20: #d2d2d2 /* Primary/Text/Gray */;
-  --color-grey-text-30: #bbbbbb /* Primary/Text/Gray */;
+  --color-grey-text-10: #e8e8e8 /* Primary/Text/Gray 10*/;
+  --color-grey-text-20: #d2d2d2 /* Primary/Text/Gray 20*/;
+  --color-grey-text-30: #bbbbbb /* Primary/Text/Gray 30*/;
+  --color-grey-text-40: #a5a5a5 /* Primary/Text/Gray 40*/;
   --color-dark-grey: #454a57 /* Dark Grey */;
 }
 

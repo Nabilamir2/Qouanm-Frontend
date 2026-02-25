@@ -28,7 +28,10 @@
           alt="expert teams icon"
           width="222"
           height="222"
-          class="mb-4"
+          format="webp"
+          quality="80"
+          loading="lazy"
+          class="mb-10"
         />
 
         <h6 class="font-bold lg:text-[24px] text-[1rem] text-black lg:w-60 leading-none mb-2 ">
@@ -47,8 +50,11 @@
         <NuxtImg
           :src="expertTeams.image"
           alt="design led image"
-          width="800"
-          height="800"
+          width="262"
+          height="328"
+          format="webp"
+          quality="80"
+          loading="lazy"
           class="w-full h-full object-cover"
         />
       </div>
@@ -60,6 +66,9 @@
         <NuxtImg
           :src="designdLed.image"
           alt="design led image"
+          width="243"
+          height="364"
+          format="webp"
           quality="80"
           loading="lazy"
           class="absolute lg:right-0 right-[-70px] bottom-0 h-full object-contain"
@@ -84,8 +93,9 @@
         <NuxtImg
           :src="reliableTimelines.image"
           alt="reliable timelinesimage"
-          width="800"
-          height="800"
+          width="262"
+          height="328"
+          format="webp"
           quality="80"
           loading="lazy"
           class="w-full h-full object-cover"
@@ -101,7 +111,10 @@
           alt="expert teams icon"
           width="222"
           height="222"
-          class="mb-4"
+          format="webp"
+          quality="80"
+          loading="lazy"
+          class="mb-10"
         />
         <h6
           class="font-bold lg:text-[24px] text-[1rem] text-primary-gold  lg:w-60 leading-none mb-2 "

@@ -73,6 +73,18 @@ const ABOUT_DATA = {
       icon: "/images/deleted/clock.png",
     },
   },
+  ourMission: {
+    label: "Our Mission",
+    description:
+      "To give the wood industry in Egypt a new dimension and establish standards, powered by strong and durable natural wood, with the finest finishing.",
+    image: "/images/deleted/project-3.png",
+  },
+  ourVision: {
+    label: "Our Vision",
+    description:
+      "Our aim is to export our work all over the world, as well as, expanding our partnerships with the top brands in Egypt and the Middle East, through providing top-grade and fine natural woods.",
+    image: "/images/deleted/our-vision.png",
+  },
 } as const;
 
 /** Load home + faqs data without touching Pinia (avoids circular dependency / TDZ). */

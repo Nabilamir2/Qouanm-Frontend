@@ -6,7 +6,7 @@
         :subtitle="generalData?.aboutQouanm?.subtitle"
         :listFeatures="generalData?.aboutQouanm?.listFeatures"
         />
-        <div class="relative">
+      <div class="relative">
         <div class="sticky top-0 -z-10">
         <OurStory 
         :image="generalData?.ourStory?.image"
@@ -25,6 +25,16 @@
         :reliableTimelines="generalData?.designedToDeliver?.reliableTimelines"
         />
     </div>
+      <OurMission 
+      :label="generalData?.ourMission?.label"
+      :description="generalData?.ourMission?.description"
+      :image="generalData?.ourMission?.image"
+      />
+      <OurVision 
+      :label="generalData?.ourVision?.label"
+      :description="generalData?.ourVision?.description"
+      :image="generalData?.ourVision?.image"
+      />
     </div>
   </template>
   
@@ -34,6 +44,8 @@
   import OurStory from './OurStory.vue'
   import Numbers from './Numbers.vue'
   import DesignedToDeliver from './DesignedToDeliver.vue'
+  import OurMission from './OurMission.vue'
+  import OurVision from './OurVision.vue'
   const { useGeneralStore } = await import('@/stores/general')
   
   // const store = useGeneralStore()

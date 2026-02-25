@@ -16,8 +16,8 @@
             class="w-full h-full object-cover"
             :alt="'about-qouanm--' + index"
             loading="lazy"
-            width="100%"
-            height="100%"
+            width="262"
+            height="328"
             format="webp"
             quality="80"
           />
