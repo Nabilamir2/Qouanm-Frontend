@@ -3,7 +3,7 @@
     class="lg:h-[150vh] h-screen overflow-hidden bg-black pb-18 px-15 flex items-end justify-center"
   >
     <div class="flex flex-col items-center justify-center">
-      <IntroAboutSection :title="title" :subtitle="subtitle" :label="label" />
+      <IntroMainSection :title="title" :subtitle="subtitle" :label="label" />
       <div class="grid grid-cols-11 auto-rows-[70px] lg:gap-4 gap-1 mt-[60px]">
         <div
           v-for="(feature, index) in listFeatures"
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import IntroAboutSection from '../main-component/IntroAboutSection.vue';
+import IntroMainSection from '../main-component/IntroMainSection.vue';
 
 const props = defineProps({
   label: {

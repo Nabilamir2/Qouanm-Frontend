@@ -1,5 +1,13 @@
 <template>
-    <div>
-        <h1>Services</h1>
-    </div>
-</template>
+    <IndexListServices />
+  </template>
+  
+  <script setup>
+  import IndexListServices from '~/components/services-components/IndexListServices.vue'
+  
+  definePageMeta({
+    showConsultation: true
+  })
+  
+  </script>
+  

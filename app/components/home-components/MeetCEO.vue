@@ -39,13 +39,7 @@
             <span class="text-primary-gold">{{ splitTitle.last }}</span>
           </h3>
           <hr class="w-30 border-primary-gold" />
-          <p
-            class="text-grey-text-20 text-[1.25rem] font-400"
-            v-for="(paragraph, index) in listParagraphs"
-            :key="index"
-          >
-            {{ paragraph }}
-          </p>
+            <div v-html="description"  class="text-grey-text-20 text-[1.25rem] font-400"></div>
         </div>
         <div
           class="flex justify-between items-center pl-[44px] pr-[20px] pb-[20px]"
@@ -77,7 +71,6 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue';
 import { motion } from "motion-v"
 
@@ -90,11 +83,9 @@ const props = defineProps({
     type: String,
     default: ''
   },
-  listParagraphs: {
-    type: Array as PropType<string[]>,
-    default: [
-
-    ]
+  description: {
+    type: String,
+    default: ''
   },
   signature: {
     type: String,

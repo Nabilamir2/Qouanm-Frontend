@@ -4,7 +4,7 @@
  */
 
 const HOME_DATA = {
-  hero: {
+  hero_section: {
     title: "Design, Manufacture, and Deliver Premium Interiors",
     subtitle:
       "Proudly Egyptian craftsmanship, built on high-standard wood manufacturing",
@@ -17,17 +17,17 @@ const HOME_DATA = {
       "Complete Interiors Solutions",
     ],
   },
-  solutions: {
+  about_section: {
     title: "Complete Interior Solutions",
     subtitle:
       "Qouanm combines creative design expertise with in-house manufacturing capabilities to deliver exceptional interiors for hotels, compounds, offices, and premium residences.",
     image: "/images/deleted/about-img.png",
   },
-  ontime: {
+  solutions_section: {
     title: "Complete Solutions Delivered on Time",
     subtitle:
       "Qouanm unifies design, in-house manufacturing, and execution to deliver accurate timelines and reliable results.",
-    listOfFeatures: [
+    solutions: [
       {
         title: "Design with Built-In Timelines",
         description:
@@ -48,21 +48,21 @@ const HOME_DATA = {
       },
     ],
   },
-  services: {
+  services_section: {
     title: "Interior Services That Perform",
     subtitle:
       "Services built to support hotels, developments, and complex spaces with confidence and control.",
-    servicesCards: [
+    services: [
       {
         title: "Hospitality Interiors & Hotel Furniture",
         description:
           "We design, manufacture, and deliver complete interior solutions for hotels and hospitality spaces — from guestrooms and lobbies to reception areas and public zones — ensuring consistent quality, efficient timelines, and seamless execution at scale.",
         statistics: [
-          { title: "Rooms Finishing ", icon: "+200" },
-          { title: "Furniture Units Manufactured", icon: "+5,000" },
-          { title: "Luxury Loopy Designs", icon: "100%" },
+          { title: "Rooms Finishing ", subtitle: "+200" },
+          { title: "Furniture Units Manufactured", subtitle: "+5,000" },
+          { title: "Luxury Loopy Designs", subtitle: "100%" },
         ],
-        image: [
+        gallery: [
           "/images/deleted/services-one.png",
           "/images/deleted/services-two.png",
         ],
@@ -72,30 +72,30 @@ const HOME_DATA = {
         description:
           "For compounds and large residential projects, we provide integrated interior design and furnishing services tailored to bedrooms, living areas, kitchens, and outdoor spaces — delivered with accuracy, consistency, and controlled timelines..",
         statistics: [
-          { title: "Residential Spaces Furnished", icon: "+200" },
-          { title: "Furniture Units Manufactured", icon: "+5,000" },
+          { title: "Residential Spaces Furnished", subtitle: "+200" },
+          { title: "Furniture Units Manufactured", subtitle: "+5,000" },
         ],
-        image: ["/images/deleted/services-one.png"],
+        gallery: ["/images/deleted/services-one.png"],
       },
       {
         title: "Interior Design & 3D Visualization",
         description:
           "Our design team develops well-planned interior concepts supported by realistic 3D visuals, allowing clients to review, approve, and move forward with confidence — while aligning design decisions with execution schedules.",
         statistics: [
-          { title: "Interior Concepts Designed", icon: "+300" },
-          { title: "Realistic 3D Visualization", icon: "100%" },
+          { title: "Interior Concepts Designed", subtitle: "+300" },
+          { title: "Realistic 3D Visualization", subtitle: "100%" },
         ],
-        image: ["/images/deleted/services-one.png"],
+        gallery: ["/images/deleted/services-one.png"],
       },
       {
         title: "Kitchens & Wardrobes",
         description:
           "We design and manufacture custom kitchens and wardrobes that combine functionality, durability, and refined finishes, produced in our factory and installed with accuracy and speed.",
         statistics: [
-          { title: "Concept Designs", icon: "+500" },
-          { title: "RTailored to Your Space", icon: "100%" },
+          { title: "Concept Designs", subtitle: "+500" },
+          { title: "RTailored to Your Space", subtitle: "100%" },
         ],
-        image: [
+        gallery: [
           "/images/deleted/services-one.png",
           "/images/deleted/services-two.png",
         ],
@@ -127,18 +127,13 @@ const HOME_DATA = {
       "/images/deleted/image-12.png",
     ],
   },
-  seo: {
+  ceo_section: {
     image: "/images/deleted/meet-ceo.jpg",
     title: "Meet Our CEO",
-    listParagraphs: [
-      " At Qouanm, we believe that successful interior projects are built on more than design alone. They require clear planning, skilled people, and full control over every stage of production and execution.",
-      " From the beginning, our vision was to create a company that brings design, in-house manufacturing, and execution together under one system.This approach allows us to maintain high standards, reduce delays, and deliver projects with accuracy and confidence — especially for spaces where timing and consistency truly matter.",
-      "Our team takes pride in every detail, from the first design concept to the final installation. We are committed to building long-term partnerships by delivering interiors that reflect quality, reliability, and respect for our clients' timelines.",
-    ],
+    description: `<p> At Qouanm, we believe that successful interior projects are built on more than design alone. They require clear planning, skilled people, and full control over every stage of production and execution.</p> <br /> <p> From the beginning, our vision was to create a company that brings design, in-house manufacturing, and execution together under one system.This approach allows us to maintain high standards, reduce delays, and deliver projects with accuracy and confidence — especially for spaces where timing and consistency truly matter.</p> <br /> <p>Our team takes pride in every detail, from the first design concept to the final installation. We are committed to building long-term partnerships by delivering interiors that reflect quality, reliability, and respect for our clients' timelines.</p>`,
     signature: "/images/deleted/signature.png",
-    logo: "/images/deleted/logo-seo.png",
   },
-  featured: {
+  projects_section: {
     title: "Featured Projects",
     subtitle:
       "Explore our portfolio of successfully delivered hospitality, commercial, and residential projects.",
@@ -236,11 +231,10 @@ const HOME_DATA = {
       },
     ],
   },
-  ourProcess: {
+  our_process_section: {
     title: "Our Process",
     subtitle:
       "A structured approach from initial consultation to final handover.",
-    image: "/images/deleted/logo-seo.png",
     steps: [
       {
         number: 1,
@@ -266,7 +260,7 @@ const HOME_DATA = {
       },
     ],
   },
-  clientsReviews: {
+  reviews_section: {
     title: "Clients Reviews",
     subtitle: "What our clients say about working with Qouanm.",
     image: "/images/deleted/clients-reviews.png",
@@ -305,10 +299,10 @@ const HOME_DATA = {
       },
     ],
   },
-  mediaCenter: {
+  media_section: {
     title: "Media Center",
     subtitle: "What our clients say about working with Qouanm.",
-    posts: [
+    featured_media: [
       {
         id: 1,
         blog: "hospitality-furniture-impacts ",
@@ -354,8 +348,9 @@ const HOME_DATA = {
 } as const;
 
 const FAQS_DATA = {
-  label: "Have A Question?",
-  title: "Frequently Asked Question",
+  title: "Have A Question?",
+  subtitle: "Frequently Asked Question",
+  image: "",
   faqs: [
     {
       id: 1,

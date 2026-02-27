@@ -3,9 +3,9 @@
       <div class="container py-20">
         <div class="flex flex-col gap-2 justify-center items-center">
           <p class="text-secondary-text text-[1rem] font-normal">
-            {{ label }}
+            {{ title }}
           </p>
-          <h3 class="text-primary-1 text-[2.5rem] font-bold">{{ title }}</h3>
+          <h3 class="text-primary-1 text-[2.5rem] font-bold">{{ subtitle }}</h3>
         </div>
         <div class="w-[62%] mx-auto">
           <AskedQs :faqsQuestion="faqs" />
@@ -26,7 +26,7 @@
   
   const props = defineProps<{
     title: string;
-    label: string;
+    subtitle: string;
     faqs: {
       question: string;
       answer: string;

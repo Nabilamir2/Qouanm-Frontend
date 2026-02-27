@@ -13,7 +13,7 @@
             :title="service?.title"
             :description="service?.description"
             :statistics="service?.statistics"
-            :imageCard="service?.image"
+            :imageCard="service?.gallery"
           />
         </div>
       </div>
@@ -39,7 +39,7 @@ const props = defineProps({
         type: Array as PropType<{ 
           title: string, 
           description: string, 
-          statistics: { title: string, icon: string }[], image: string[] }[]>,
+          statistics: { title: string, icon: string }[], gallery: string[] }[]>,
         default: () => []
     }
 })

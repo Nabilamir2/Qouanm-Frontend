@@ -1,59 +1,59 @@
 <template>
       <HeroSection
-        :title="generalData?.hero?.title"
-        :subtitle="generalData?.hero?.subtitle"
-        :description="generalData?.hero?.description"
-        :image="generalData?.hero?.image"
-        :listOfFeatures="generalData?.hero?.listOfFeatures"
+        :title="generalData?.hero_section?.title"
+        :subtitle="generalData?.hero_section?.subtitle"
+        :description="generalData?.hero_section?.description"
+        :image="generalData?.hero_section?.image"
+        :listOfFeatures="generalData?.hero_section?.listOfFeatures"
       />   
       <Solutions
-        :title="generalData?.solutions?.title"
-        :subtitle="generalData?.solutions?.subtitle"
-        :image="generalData?.solutions?.image"
+        :title="generalData?.about_section?.title"
+        :subtitle="generalData?.about_section?.subtitle"
+        :image="generalData?.about_section?.image"
       />
       <Ontime
-        :title="generalData?.ontime?.title"
-        :subtitle="generalData?.ontime?.subtitle"
-        :listOfFeatures="generalData?.ontime?.listOfFeatures"
+        :title="generalData?.solutions_section?.title"
+        :subtitle="generalData?.solutions_section?.subtitle"
+        :listOfFeatures="generalData?.solutions_section?.solutions"
       />
       <Services
-        :title="generalData?.services?.title"
-        :subtitle="generalData?.services?.subtitle"
-        :services="generalData?.services?.servicesCards"
+        :title="generalData?.services_section?.title"
+        :subtitle="generalData?.services_section?.subtitle"
+        :services="generalData?.services_section?.services"
       />
       <SupportClients :ourClients="generalData?.partners?.logos" />
       <MeetCEO
-        :image="generalData?.seo?.image"
-        :title="generalData?.seo?.title"
-        :listParagraphs="generalData?.seo?.listParagraphs"
-        :signature="generalData?.seo?.signature"
-        :logo="generalData?.seo?.logo"
+        :image="generalData?.ceo_section?.image"
+        :title="generalData?.ceo_section?.title"
+        :description="generalData?.ceo_section?.description"
+        :signature="generalData?.ceo_section?.signature"
+        :logo="'/images/logo.png'"
       />  
       <Fatured
-        :title="generalData?.featured?.title"
-        :subtitle="generalData?.featured?.subtitle"
-        :projects="generalData?.featured?.projects"
+        :title="generalData?.projects_section?.title"
+        :subtitle="generalData?.projects_section?.subtitle"
+        :projects="generalData?.projects_section?.projects"
       />
       <OurProcessHome
-        :title="generalData?.ourProcess?.title"
-        :subtitle="generalData?.ourProcess?.subtitle"
-        :image="generalData?.ourProcess?.image"
-        :steps="generalData?.ourProcess?.steps"
+        :title="generalData?.our_process_section?.title"
+        :subtitle="generalData?.our_process_section?.subtitle"
+        :image="'/images/logo.png'"
+        :steps="generalData?.our_process_section?.steps"
       />
       <ClientsReviews
-        :title="generalData?.clientsReviews?.title"
-        :subtitle="generalData?.clientsReviews?.subtitle"
-        :image="generalData?.clientsReviews?.image"
-        :reviews="generalData?.clientsReviews?.reviews"
+        :title="generalData?.reviews_section?.title"
+        :subtitle="generalData?.reviews_section?.subtitle"
+        :image="generalData?.reviews_section?.image"
+        :reviews="generalData?.reviews_section?.reviews"
       />
       <MediaCenter
-        :title="generalData?.mediaCenter?.title"
-        :subtitle="generalData?.mediaCenter?.subtitle"
-        :posts="generalData?.mediaCenter?.posts"
+        :title="generalData?.media_section?.title"
+        :subtitle="generalData?.media_section?.subtitle"
+        :posts="generalData?.media_section?.featured_media"
       />
       <FaqsSection
         :title="faqsData?.title"
-        :label="faqsData?.label"
+        :subtitle="faqsData?.subtitle"
         :faqs="faqsData?.faqs"
       />
   </template>
