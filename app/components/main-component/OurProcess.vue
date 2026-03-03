@@ -40,7 +40,7 @@
               font-bold text-[24px] text-primary-gold"
                   aria-hidden="true"
                 >
-                  {{ item.number }}
+                  {{ item.number ? item.number : index + 1 }}
                 </div>
               </div>
               <div class="lg:max-w-[370px] max-w-[250px]  py-[35px]">

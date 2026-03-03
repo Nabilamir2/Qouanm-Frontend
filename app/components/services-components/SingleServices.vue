@@ -21,6 +21,12 @@
       :small_image="singleServiceData?.includedServices?.small_image" 
       :big_image="singleServiceData?.includedServices?.big_image" 
       />
+      <OurProcessServices
+        :title="singleServiceData?.ourProcess?.title"
+        :subtitle="singleServiceData?.ourProcess?.subtitle"
+        :image="'/images/logo.png'"
+        :steps="singleServiceData?.ourProcess?.processes"
+      />
     </div>
   </template>
   
@@ -30,6 +36,7 @@
   import GalleryServices from './single-sevices-components/GalleryServices.vue'
   import OverviewServices from './single-sevices-components/OverviewServices.vue'
   import IncludedServices from './single-sevices-components/IncludedServices.vue'
+  import OurProcessServices from './single-sevices-components/OurProcessServices.vue'
 
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')
