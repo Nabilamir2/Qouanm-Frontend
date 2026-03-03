@@ -27,6 +27,11 @@
         :image="'/images/logo.png'"
         :steps="singleServiceData?.ourProcess?.processes"
       />
+      <QualityServices
+        :title="singleServiceData?.quality_section?.title"
+        :subtitle="singleServiceData?.quality_section?.subtitle"
+        :qualities="singleServiceData?.quality_section?.qualities"
+      />
     </div>
   </template>
   
@@ -37,6 +42,7 @@
   import OverviewServices from './single-sevices-components/OverviewServices.vue'
   import IncludedServices from './single-sevices-components/IncludedServices.vue'
   import OurProcessServices from './single-sevices-components/OurProcessServices.vue'
+  import QualityServices from './single-sevices-components/QualityServices.vue'
 
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')
