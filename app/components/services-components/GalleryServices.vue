@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-black py-20 px-15">
+  <section class="bg-black py-20 lg:px-15 px-1 ">
     <SwiperGallery :galleryList="gallery" />
   </section>
 </template>

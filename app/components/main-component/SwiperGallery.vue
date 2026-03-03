@@ -53,12 +53,22 @@ function slideNext() {
 function initSwiper(el: any) {
   if (!el) return
   Object.assign(el, {
-    slidesPerView: 5,
     spaceBetween: 10,
     loop: true,
     centeredSlides: true,
     loopAdditionalSlides: 1,
     speed: 400,
+    breakpoints: {
+      // 0: {
+      //   slidesPerView: 1,
+      // },
+      768: {
+        slidesPerView: 3, // tablet
+      },
+      1024: {
+        slidesPerView: 5, // desktop
+      },
+    },
   })
   el.initialize()
 }
