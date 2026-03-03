@@ -15,7 +15,7 @@
   <script setup>
     import { computed, onMounted } from 'vue'
     import IntroServices from './IntroServices.vue'
-    import ServicesList from './ServicesList.vue'
+    import ServicesList from './list-services-components/ServicesList.vue'
   
     const { useGeneralStore } = await import('@/stores/general')
   

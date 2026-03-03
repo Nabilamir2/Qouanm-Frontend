@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import SwiperGallery from '../main-component/SwiperGallery.vue'
+import SwiperGallery from '../../main-component/SwiperGallery.vue'
 
 const props = defineProps({
   gallery: {

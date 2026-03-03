@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 import type { ServicesType } from '~/types/ServicesType';
 import type { PropType } from 'vue';
-import ServicesCard from '../ui/cards/ServicesCard.vue';
+import ServicesCard from '../../ui/cards/ServicesCard.vue';
 
 const props = defineProps({
     services: {

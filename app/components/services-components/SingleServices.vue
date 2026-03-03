@@ -14,14 +14,23 @@
       :overviewTitle="singleServiceData?.overview_section?.title" 
       :overviewDescription="singleServiceData?.overview_section?.description"
        />
+      <IncludedServices 
+      :title="singleServiceData?.includedServices?.title" 
+      :subtitle="singleServiceData?.includedServices?.subtitle" 
+      :points="singleServiceData?.includedServices?.points" 
+      :small_image="singleServiceData?.includedServices?.small_image" 
+      :big_image="singleServiceData?.includedServices?.big_image" 
+      />
     </div>
   </template>
   
   <script setup>
   import { computed, onMounted } from 'vue'
   import IntroServices from './IntroServices.vue'
-  import GalleryServices from './GalleryServices.vue'
-  import OverviewServices from './OverviewServices.vue'
+  import GalleryServices from './single-sevices-components/GalleryServices.vue'
+  import OverviewServices from './single-sevices-components/OverviewServices.vue'
+  import IncludedServices from './single-sevices-components/IncludedServices.vue'
+
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')
   

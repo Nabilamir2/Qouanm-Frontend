@@ -37,8 +37,8 @@ const SINGLE_SERVICE_DATA = {
       "Material, fabric, and finish selection",
       "On-site installation and coordination",
     ],
-    small_image: "/images/deleted/single-service.png",
-    big_image: "/images/deleted/project-1.png",
+    small_image: "/images/deleted/project-3.png",
+    big_image: "/images/deleted/project-2.png",
   },
   ourProcess: {
     title: "Our Process",
