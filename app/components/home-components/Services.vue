@@ -22,7 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import type { ServicesType } from '~/types/ServicesType';
+import type { PropType } from 'vue';
 import IntroCenterSection from '../main-component/IntroCenterSection.vue'
 import ServicesCard from '../ui/cards/ServicesCard.vue'
 
@@ -36,11 +37,8 @@ const props = defineProps({
         default: () => ''
     },
     services: {
-        type: Array as PropType<{ 
-          title: string, 
-          description: string, 
-          statistics: { title: string, icon: string }[], gallery: string[] }[]>,
-        default: () => []
+      type: Array as PropType<ServicesType[]>,
+      default: () => [] 
     }
 })
 </script>

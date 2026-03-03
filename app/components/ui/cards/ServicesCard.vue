@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex lg:flex-nowrap flex-wrap gap-[32px] w-full"
+    class="flex lg:flex-nowrap flex-wrap gap-[32px] w-full items-stretch"
     :class="`${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`"
   >
     <div
       v-if="imageCard?.length === 1"
-      class="relative flex  min-h-[392px] h-full w-full lg:w-[55.6%] rounded-[20px]"
+      class="relative w-full lg:w-[55.6%] rounded-[20px]"
     >
       <NuxtImg
         class="w-full h-full object-cover absolute top-0 left-0 rounded-[20px]"
@@ -20,7 +20,7 @@
 
     <div
       v-else-if="imageCard?.length === 2"
-      class="relative grid grid-cols-3 gap-[8px] min-h-[392px] h-full w-full lg:w-[55.6%] "
+      class="relative grid grid-cols-3 gap-[8px] items-stretch w-full lg:w-[55.6%] "
     >
       <div class="col-span-2 relative rounded-[20px]">
         <NuxtImg
@@ -47,7 +47,7 @@
     </div>
 
     <div
-      class="flex flex-col gap-[18px] justify-center items-start w-full lg:w-[44.4%]"
+      class="flex flex-col gap-[18px] justify-center items-start  w-full lg:w-[44.4%]  py-4"
     >
       <h3 class="text-white text-[2rem] font-700 w-[72%]">
         {{ title }}
@@ -66,14 +66,14 @@
           class="pr-[18px] border-r border-primary-gold/20 last:border-r-0"
         >
           <p class="text-primary-gold text-[1.75rem] font-600">
-            {{ facility.icon }}
+            {{ facility.subtitle }}
           </p>
           <p class="text-grey-text-10 text-[1rem] font-400 text-nowrap">
             {{ facility.title }}
           </p>
         </div>
       </div>
-      <div class="flex">
+      <div class="flex mt-auto">
         <MainButton
           :ButtonText="'Explore'"
           :paddingX="'px-[52px] py-[17.5px]'"
@@ -106,7 +106,7 @@ export default {
             default: () => ''
         },
         statistics: {
-            type: Array as PropType<{ title: string, icon: string }[]>,
+            type: Array as PropType<{ title: string, subtitle: string }[]>,
             default: () => []
         },
         imageCard: {

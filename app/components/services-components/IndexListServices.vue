@@ -4,6 +4,10 @@
         :label="generalData?.services?.label"
         :title="generalData?.services?.title"
         :subtitle="generalData?.services?.subtitle"
+        :MaxWidth="'70%'"
+      />
+      <ServicesList 
+        :services="generalData?.services?.servicesCards"
       />
     </div>
   </template>
@@ -11,6 +15,7 @@
   <script setup>
     import { computed, onMounted } from 'vue'
     import IntroServices from './IntroServices.vue'
+    import ServicesList from './ServicesList.vue'
   
     const { useGeneralStore } = await import('@/stores/general')
   
