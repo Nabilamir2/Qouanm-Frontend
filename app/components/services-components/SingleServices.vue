@@ -10,6 +10,10 @@
           { name: singleServiceData?.title, to: '' }]"
       />
       <GalleryServices :gallery="singleServiceData?.gallery" />
+      <OverviewServices 
+      :overviewTitle="singleServiceData?.overview_section?.title" 
+      :overviewDescription="singleServiceData?.overview_section?.description"
+       />
     </div>
   </template>
   
@@ -17,6 +21,7 @@
   import { computed, onMounted } from 'vue'
   import IntroServices from './IntroServices.vue'
   import GalleryServices from './GalleryServices.vue'
+  import OverviewServices from './OverviewServices.vue'
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')
   
