@@ -1,13 +1,13 @@
 <template>
   <button
     class="flex items-center gap-[10px] justify-between 
-      text-primary-gold-dark 
       min-w-[100px]
       bg-transparent 
       "
+      :class="textColor"
   >
     <span class="text-[1rem] text-nowrap font-600">{{ ButtonText }}</span>
-    <Icon name="uil:arrow-right" class="text-primary-gold-dark" size="18px" />
+    <Icon name="uil:arrow-right" :class="textColor" size="18px" />
   </button>
 </template>
 
@@ -18,6 +18,11 @@ export default {
     ButtonText: {
       type: String,
       required: true,
+    },
+    textColor: {
+      type: String,
+      required: false,
+      default: 'text-primary-gold-dark ',
     },
   },
 }

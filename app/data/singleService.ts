@@ -116,9 +116,8 @@ const SINGLE_SERVICE_DATA = {
       {
         title: "Hilton Hotel Guest Rooms &#038; Public Areas",
         slug: "hilton-hotel-guest-rooms-public-areas",
-        image:
-          "https://backoffice.qouanmstudio.com/wp-content/uploads/2026/02/e79381c97b134e75afc94d04f9a59c0dad67a061.png",
-        logo: null,
+        image: "/images/deleted/project-1.png",
+        logo: "/images/deleted/project-logo.png",
         excerpt:
           "Discover Qouanm's interiors, furniture, and turnkey projects in hospitality, residential, and corporate spaces. Each project showcases our dedication to quality, in-house manufacturing, and timely delivery.",
         rooms_design: "250",
@@ -128,9 +127,8 @@ const SINGLE_SERVICE_DATA = {
       {
         title: "Hilton Hotel Guest Rooms &#038; Public Areas",
         slug: "hilton-hotel-guest-rooms-public-areas",
-        image:
-          "https://backoffice.qouanmstudio.com/wp-content/uploads/2026/02/e79381c97b134e75afc94d04f9a59c0dad67a061.png",
-        logo: null,
+        image: "/images/deleted/project-2.png",
+        logo: "/images/deleted/project-logo.png",
         excerpt:
           "Discover Qouanm's interiors, furniture, and turnkey projects in hospitality, residential, and corporate spaces. Each project showcases our dedication to quality, in-house manufacturing, and timely delivery.",
         rooms_design: "250",
@@ -140,9 +138,8 @@ const SINGLE_SERVICE_DATA = {
       {
         title: "Hilton Hotel Guest Rooms &#038; Public Areas",
         slug: "hilton-hotel-guest-rooms-public-areas",
-        image:
-          "https://backoffice.qouanmstudio.com/wp-content/uploads/2026/02/e79381c97b134e75afc94d04f9a59c0dad67a061.png",
-        logo: null,
+        image: "/images/deleted/project-3.png",
+        logo: "/images/deleted/project-logo.png",
         excerpt:
           "Discover Qouanm's interiors, furniture, and turnkey projects in hospitality, residential, and corporate spaces. Each project showcases our dedication to quality, in-house manufacturing, and timely delivery.",
         rooms_design: "250",
@@ -152,9 +149,8 @@ const SINGLE_SERVICE_DATA = {
       {
         title: "Hilton Hotel Guest Rooms &#038; Public Areas",
         slug: "hilton-hotel-guest-rooms-public-areas",
-        image:
-          "https://backoffice.qouanmstudio.com/wp-content/uploads/2026/02/e79381c97b134e75afc94d04f9a59c0dad67a061.png",
-        logo: null,
+        image: "/images/deleted/project-4.png",
+        logo: "/images/deleted/project-logo.png",
         excerpt:
           "Discover Qouanm's interiors, furniture, and turnkey projects in hospitality, residential, and corporate spaces. Each project showcases our dedication to quality, in-house manufacturing, and timely delivery.",
         rooms_design: "250",

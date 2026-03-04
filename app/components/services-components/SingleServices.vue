@@ -35,6 +35,11 @@
         :subtitle="singleServiceData?.quality_section?.subtitle"
         :qualities="singleServiceData?.quality_section?.qualities"
       />
+      <ProjectsServices
+        :title="singleServiceData?.projects_section?.title"
+        :subtitle="singleServiceData?.projects_section?.subtitle"
+        :projects="singleServiceData?.projects_section?.projects"
+      />
     </div>
   </template>
   
@@ -47,6 +52,7 @@
   import OurProcessServices from './single-sevices-components/OurProcessServices.vue'
   import QualityServices from './single-sevices-components/QualityServices.vue'
   import RotatingGuaranteeCircle from './single-sevices-components/RotatingGuaranteeCircle.vue'
+  import ProjectsServices from './single-sevices-components/ProjectsServices.vue'
 
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')

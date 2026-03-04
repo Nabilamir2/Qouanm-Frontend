@@ -94,3 +94,21 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* Safari support */
 }
+
+.gallery-nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--color-primary-gold, #c4a265);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-nav-btn:hover {
+  opacity: 0.8;
+}
