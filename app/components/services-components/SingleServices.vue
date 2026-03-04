@@ -27,6 +27,9 @@
         :image="'/images/logo.png'"
         :steps="singleServiceData?.ourProcess?.processes"
       />
+      <div class="relative">
+        <RotatingGuaranteeCircle />
+      </div>
       <QualityServices
         :title="singleServiceData?.quality_section?.title"
         :subtitle="singleServiceData?.quality_section?.subtitle"
@@ -43,6 +46,7 @@
   import IncludedServices from './single-sevices-components/IncludedServices.vue'
   import OurProcessServices from './single-sevices-components/OurProcessServices.vue'
   import QualityServices from './single-sevices-components/QualityServices.vue'
+  import RotatingGuaranteeCircle from './single-sevices-components/RotatingGuaranteeCircle.vue'
 
   // dynamic import للـ store عشان نتجنب TDZ
   const { useGeneralStore } = await import('@/stores/general')

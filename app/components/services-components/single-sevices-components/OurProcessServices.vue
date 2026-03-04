@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-primary-1 px-15 pb-25">
+    <section class="bg-primary-1 px-15 pb-25 -z-10">
       <OurProcess
         :title="title"
         :subtitle="subtitle"
@@ -7,6 +7,7 @@
         :steps="steps"
         :buttonText="`Let's Talk`"
       />
+      
     </section>
   </template>
   <script setup lang="ts">

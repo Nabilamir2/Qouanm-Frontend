@@ -2,7 +2,7 @@
   <div class="bg-primary-1 grid grid-cols-7 px-20 py-15">
     <div class="lg:col-span-2 col-span-7 flex flex-col items-start justify-between lg:pb-0 pb-20">
         <div>
-            <img src="/images/logo-white.png" alt="logo" width="238" height="52" />
+            <img src="/images/full-logo-white.png" alt="logo" width="238" height="52" />
         </div>
         <div><JoinOurNewsletter /></div>
     </div>

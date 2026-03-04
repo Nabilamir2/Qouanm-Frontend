@@ -2,7 +2,7 @@
   <div class="flex justify-between items-center px-[60px] py-[21px] h-[94px]">
     <div class="h-full flex items-center">
       <NuxtLink to="/">
-        <img src="/images/logo-white.png" alt="logo" width="238" height="52" />
+        <img src="/images/full-logo-white.png" alt="logo" width="238" height="52" />
       </NuxtLink>
     </div>
 
