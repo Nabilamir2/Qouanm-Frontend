@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="z-200">
       <FooterContent />
       <DesignedBy />
     </footer>
